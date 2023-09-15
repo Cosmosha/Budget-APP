@@ -1,0 +1,13 @@
+<div class="cat-container">
+  <header class="fixed" >
+    <div>
+        <%= image_tag 'menu.png', id: "menu-icon" %>
+    </div>
+    <h2>
+        Categories
+    </h2>
+    <div>
+        <%= button_to "Logout", destroy_user_session_path, method: :delete %>
+    </div>
+  </header>
+</div>
