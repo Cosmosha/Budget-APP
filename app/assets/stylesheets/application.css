@@ -38,16 +38,14 @@ body {
 }
 
 .custom-container {
-  border: 2px solid grey;
-  border-radius: 4rem;
-  box-shadow: 2px 4px 2px 4px #0000003d;
+  top: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 1rem;
   margin-bottom: 1rem;
   gap: 1rem;
+  width: 100%;
 }
 
 .login-form {
@@ -58,16 +56,22 @@ body {
   margin: 2rem;
   padding: 1.2rem;
   gap: 2rem;
+  border: 2px solid grey;
+  border-radius: 3rem;
+  box-shadow: 2px 4px 2px 4px #0000003d;
 }
 
 .splash-page {
-  width: 16rem;
   height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 3rem;
   margin-top: 2rem;
+  border: 2px solid grey;
+  border-radius: 3rem;
+  box-shadow: 2px 4px 2px 4px #0000003d;
 }
 
 .splash-page .headline {
@@ -83,11 +87,16 @@ body {
   gap: 2rem;
 }
 
-.splash-page .splashBtn:hover {
+.splashBtn:hover {
   color: #fff !important;
   box-shadow: 2px 3px #434b5431;
   background: var(--button-color);
   transition: all 400ms ease;
+}
+
+.actions .btn {
+  margin-top: 3rem;
+  border: 2px solid #fff;
 }
 
 .login-form .links {
@@ -107,4 +116,165 @@ body {
   border: none;
   background-color: var(--button-color);
   transition: all 300ms ease;
+}
+
+.cat-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.addCategory {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 4rem;
+  padding: 2rem;
+}
+
+/* .fixed {
+  position: fixed;
+  top: 0;
+} */
+
+.alert {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  color: #fff;
+  background-color: var(--main-color);
+  border-radius: 3rem;
+}
+
+header {
+  width: 100vw;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--main-color);
+  border-radius: 2.7rem 2.7rem 0 0;
+  padding: 1rem 2rem;
+  border: 2px solid grey;
+}
+
+header h2 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+header button {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: all 300ms ease;
+  padding-bottom: 0.3rem;
+}
+
+header button:hover {
+  color: #e2dede;
+}
+
+.category-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem;
+}
+
+footer a {
+  text-decoration: none;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  background-color: var(--green);
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 0 0 2.7rem 2.7rem;
+}
+
+.category-group a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+footer a:hover {
+  border: 2px solid #fff;
+  padding: 1rem;
+  transition: all 300ms ease;
+  text-decoration: none;
+  color: rgb(235, 231, 227);
+}
+
+.category-card {
+  background-color: #f1eded;
+  width: calc(100vw - 40px);
+  padding: 1rem;
+  display: flex;
+  text-decoration: none;
+  gap: 2rem;
+  border: 2px solid #e2dede;
+  border-radius: 2rem;
+  transition: all 300ms ease;
+}
+
+.category-card:hover {
+  border: 2px solid var(--main-color);
+  transition: all 300ms ease;
+}
+
+.category-card .inner-card {
+  width: 100%;
+  padding-top: 10px;
+  font-weight: 400;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.category-card .inner-card .inner-card-info {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.category-card .inner-card h4 {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+
+.category-card img {
+  background-position: center;
+  border-radius: 50%;
+  border: 2px solid rgb(228, 220, 220);
+  width: 5rem;
+  height: 5rem;
+  padding: 0.2rem;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
