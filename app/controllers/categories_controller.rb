@@ -3,9 +3,7 @@ class CategoriesController < ApplicationController
     @categories = Category.includes(:transactions).where(author: current_user)
   end
 
-  def new
-    @category = Category.new
-  end
+  def new; end
 
   def create
     current_user.categories.create(category_params)
