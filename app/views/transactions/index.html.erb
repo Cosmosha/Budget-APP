@@ -1,0 +1,51 @@
+<header>
+    <div>
+        <%= link_to image_tag('back.png'), categories_path, id: "back-icon" %>
+    </div>
+    <h4>
+        <%= @category.name %> <br/> Transactions
+    </h4>
+    <div>
+        <%= button_to "Logout", destroy_user_session_path, method: :delete %>
+    </div>
+</header>
+
+
+<div class="transaction" >
+  <div class="category-card mb-3" >
+      <%= image_tag url_for(@category.icon), alt: "category icon" %>
+      <div class="inner-card" >
+          <div class="inner-card-info">
+              <h3> <%= @category.name %> </h3>
+              <span style="opacity: 0 ;" >
+              .
+              </span>
+          </div>
+          <h4> <%= @category.created_at.strftime('%B %d, %Y %I:%M %p') %> </h4>
+      </div>
+  </div>
+
+ <div class="transaction-group">
+  <% @transactions.each do |transaction| %>
+    <div class="transaction-card card mb-3">
+      <div class="card-body">
+        <h4 class="card-title"><%= transaction.name %></h4>
+        <h6 class="card-subtitle mb-2 text-muted">Amount: $<%= transaction.amount %></h6>
+        <p class="card-text">Created at: <%= transaction.created_at.strftime('%B %d, %Y %I:%M %p') %></p>
+      </div>
+    </div>
+  <% end %>
+  <div class="transaction-card card mb-3" style="background-color: #007BFF; color: #fff;">
+    <div class="card-body">
+      <h4 class="card-title">Payment</h4>
+      <h4 class="card-subtitle mb-2">Total: $<%= @category.transactions.sum(&:amount) %></h4>
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+<footer>
+    <%= link_to "add new transaction", new_category_transaction_path(category_id: @category.id) %>  
+</footer>

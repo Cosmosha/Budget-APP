@@ -13,8 +13,6 @@
 
   <body>
     <div class="custom-container">
-        <p class="notice" style="position: absolute; margin-left: 100px; color: white; " ><%= notice %></p>
-        <p class="alert" style="position: absolute; margin-left: 100px; color: white;" ><%= alert %></p>
       <% flash.each do |key, message| %>
         <div class="alert" role="alert">
           <%= message %>
