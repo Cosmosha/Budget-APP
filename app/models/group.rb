@@ -1,6 +1,6 @@
-class Category < ApplicationRecord
+class Group < ApplicationRecord
   belongs_to :author, class_name: 'User', foreign_key: :author_id
-  has_many :transactions, dependent: :destroy
+  has_many :entities, dependent: :destroy
 
   has_one_attached :icon
 
