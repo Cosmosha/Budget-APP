@@ -85,6 +85,4 @@ test:
 #
 production:
   <<: *default
-  database: BudgetPal_production
-  username: BudgetPal
-  password: <%= ENV["BUDGETPAL_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
