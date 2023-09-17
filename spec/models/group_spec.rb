@@ -1,5 +1,32 @@
 require 'rails_helper'
 
 RSpec.describe Group, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  before(:each) do
+    @user = User.create(name: 'Test User', email: 'test@example.com', password: 'password')
+    @group = @user.groups.create(name: 'Test Group')
+  end
+
+  describe 'validations' do
+    it 'is not valid without a name' do
+      @group.name = nil
+      expect(@group).to_not be_valid
+    end
+
+    it 'is not valid without an icon' do
+      @group.icon = nil
+      expect(@group).to_not be_valid
+    end
+  end
+
+  describe 'associations' do
+    it 'belongs to a user' do
+      association = Group.reflect_on_association(:author)
+      expect(association.macro).to eq(:belongs_to)
+    end
+
+    it 'has many entities' do
+      association = Group.reflect_on_association(:entities)
+      expect(association.macro).to eq(:has_many)
+    end
+  end
 end
