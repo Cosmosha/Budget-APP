@@ -2,13 +2,15 @@
 
 # <a name="about-project"> BudgetPal </a>
 
-BudgetPal: "A Ruby on Rails-powered budget management app for effortless financial control and tracking."
+BudgetPal: "A Ruby on Rails-powered mobile web budget management app for effortless financial control and tracking."
 
 <!-- TABLE OF CONTENTS -->
 
 ## Table of Contents
 
 - [Tech Stack](#tech-stack) 🛠️
+- [Video Presentation](#viedo-presentation)📹 
+- [Live Demo](#live-demo) 🚀
 - [Key Features](#key-features) ✨
 - [Getting Started](#getting-started) 🚀
   - [Setup](#setup) 🔧
@@ -40,6 +42,14 @@ BudgetPal: "A Ruby on Rails-powered budget management app for effortless financi
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FEATURES -->
+
+## 📹 Video Presentation<a name="Video Presentation"></a>
+
+- [Video presentation](https://www.loom.com/share/1abc0a2a09c240f5837e869e9fc52578?sid=3b9ad146-3d0c-418b-8515-85ac4e2201e5)
+
+## 🚀 Live-Demo<a name="live-demo"></a>
+
+  - [Live-Demo Link](https://budgetpal.onrender.com/)
 
 ## ✨ Key Features<a name="key-features"></a>
 
