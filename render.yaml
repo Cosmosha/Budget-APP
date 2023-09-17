@@ -1,7 +1,7 @@
 databases:
   - name: microverse
-    databaseName: budgetpal_yviz
-    user: budgetpal_yviz_user
+    databaseName: microverse_glb6
+    user: microverse
 
 services:
   - type: web
