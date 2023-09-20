@@ -14,9 +14,13 @@ class EntitiesController < ApplicationController
   def create
     @group = Group.find(params[:group_id])
     @entity = @group.entities.new({ author_id: current_user.id, **entity_params })
-    @entity.save
-
-    redirect_to group_entities_path(@group)
+    if @entity.save
+      flash[:success] = 'Transaction was successfully added.'
+      redirect_to group_entities_path(@group)
+    else
+      render :new
+      flash[:error] = 'Error! Please check the form and try again.'
+    end
   end
 
   private
