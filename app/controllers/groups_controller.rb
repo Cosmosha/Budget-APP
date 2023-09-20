@@ -6,8 +6,14 @@ class GroupsController < ApplicationController
   def new; end
 
   def create
-    current_user.groups.create(group_params)
-    redirect_to groups_path
+    @group = current_user.groups.create(group_params)
+    if @group.save
+      flash[:success] = 'Group was successfully created.'
+      redirect_to groups_path
+    else
+      flash.now[:error] = 'Error! Please check the form and try again.'
+      render :new
+    end
   end
 
   private
