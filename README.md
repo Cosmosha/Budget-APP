@@ -45,7 +45,7 @@ BudgetPal: "A Ruby on Rails-powered mobile web budget management app for effortl
 
 ## 📹 Video Presentation<a name="Video Presentation"></a>
 
-- [Video presentation](https://www.loom.com/share/17521709e65a40158681f6a1082d82ef?sid=f801c958-caf6-4829-928d-df66a71f9858)
+- [Video presentation](https://www.loom.com/share/3d1b2357b0df4790aa586e2b533d3c6f?sid=8e47eeac-12ed-4a26-b856-230b3044a3d8)
 
 ## 🚀 Live-Demo<a name="live-demo"></a>
 
