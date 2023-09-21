@@ -1,0 +1,20 @@
+<div class="login-form">
+
+  <h2 class="mb-4 mt-4">Forgot password?</h2>
+
+  <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post, class: 'form-signin' }) do |f| %>
+
+    <div class="mb-4">
+      <%= f.email_field :email, placeholder: "Email", autofocus: true, autocomplete: "email", class: "form-control form-control-lg" %>
+    </div>
+
+    <div class="form-actions">
+      <%= f.button "Send reset password", class: "btn btn-primary btn-lg btn-block rounded-pill myBtn" %>
+    </div>
+  <% end %>
+
+  <div class="links mb-2 mt-2">
+    <%= render "devise/shared/links" %>
+  </div>
+
+</div>

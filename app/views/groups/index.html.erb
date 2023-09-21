@@ -1,0 +1,43 @@
+<div class="cat-container">
+  <header class="fixed">
+    <div>
+      <%= image_tag 'menu.png', id: "menu-icon" %>
+    </div>
+    <h2>
+      Categories
+    </h2>
+    <div>
+      <%= button_to "Logout", destroy_user_session_path, method: :delete %>
+    </div>
+  </header>
+
+  <div class="gift-card">
+    <p>Gift Card</p>
+    <h3 class="money">$45.00</h3>
+  </div>
+
+  <div class="category-group">
+    <% @groups.each do |group| %>
+      <%= link_to group_entities_path(group_id: group.id) do %>
+        <div class="category-card">
+          <%= image_tag url_for(group.icon), alt: "group icon" %>
+          <div class="inner-card">
+            <div class="inner-card-info">
+              <h3><%= group.name %></h3>
+              <%= content_tag :span, class: group.entities.present? ? 'money' : 'money' do %>
+                <%= group.entities.present? ? "$#{group.entities.sum { |entity| entity.amount }}" : "$0" %>
+              <% end %>
+            </div>
+            <h4><%= group.created_at.strftime('%B %d, %Y %I:%M %p') %></h4>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+
+  <footer>
+    <div class="action">
+        <%= link_to "Add a new category", new_group_path %>
+    </div>
+  </footer>
+</div>
