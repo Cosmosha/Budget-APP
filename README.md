@@ -314,7 +314,7 @@ I would like to thank the following individuals and projects for their contribut
 
 [Ruby on Rails](https://rubyonrails.org/) : A big thank you to the creators, contributors, and maintainers of the Ruby on Rails framework. Your efforts have empowered countless developers to build powerful and scalable web applications.
 
-[UI Design](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=): A big than you to Gregoire Vella for designing this awesome UI.
+[UI Design](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=): A big thank you to Gregoire Vella for designing this awesome UI.
 
 <!-- LICENSE -->
 
