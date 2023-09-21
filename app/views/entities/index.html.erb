@@ -10,6 +10,11 @@
     </div>
 </header>
 
+  <div class="gift-card">
+    <p>Gift Card</p>
+    <h3 class="money">$45.00</h3>
+  </div>
+
 <div class="transaction" >
     <div class="category-card mb-3" >
         <%= image_tag url_for(@group.icon), alt: "group icon" %>
@@ -44,5 +49,7 @@
 </div>
 
 <footer>
-    <%= link_to "add new transaction", new_group_entity_path(group_id: @group.id) %>
+    <div class="action">
+        <%= link_to "add new transaction", new_group_entity_path(group_id: @group.id) %>
+    </div>
 </footer>
