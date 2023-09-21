@@ -109,7 +109,7 @@ Clone the project using one of the options.
 Using SSH-key:
 
 ```
-git clone git@github.com:cosmosha/recipe-app.git
+git clone git@github.com:cosmosha/budgetpal.git
 ```
 Using HTTPS:
 
@@ -120,7 +120,7 @@ git clone https://github.com/cosmosha/budgetpal.git
 You can also create the new directory just adding the name of it in the end of command. For example:
 
 ```
-git clone https://github.com/cosmosha/budgetpal.git recipe-app
+git clone https://github.com/cosmosha/budgetpal.git
 ```
 ### Installation ⚙️<a name="installation"></a>
 
