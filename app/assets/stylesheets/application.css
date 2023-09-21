@@ -300,6 +300,6 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: var(--green);
+  background-color: var(--button-color);
   border-radius: 0 0 2.7rem 2.7rem;
 }
